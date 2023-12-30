@@ -23,8 +23,8 @@ name_frame=Frame(root,width=350,height=50,bg="white")
 name_frame.place(x=210,y=20)
 imagelabel=Label(root,image='',bg="white",width=470,height=380)
 imagelabel.place(x=50,y=90)
-add_image_to_frame(imagelabel,"A:\\Python\\Projects\\Automated Attendence System\\Login-amico.png",470,380)
-app_name=Label(name_frame,text="Attendence Tracker",fg="#00243D",bg="white",font=("Microsoft YaHei UI Light",23,"bold"))
+add_image_to_frame(imagelabel,"A:\\Python\\Projects\\Automated Attendence System\\Pictures\\Login-amico.png",470,380)
+app_name=Label(name_frame,text="Attendance Tracker",fg="#00243D",bg="white",font=("Microsoft YaHei UI Light",23,"bold"))
 app_name.place(x=20,y=3)
 sign_in_heading=Label(frame,text="Sign in",fg="#005694",bg="white",font=("Microsoft YaHei UI Light",23,"bold"))
 sign_in_heading.place(x=100,y=8)
@@ -123,13 +123,13 @@ def sign_up_page():
 def changeOnHover(button,colorOnHover,colorOnLeave):
     button.bind("<Enter>",func=lambda e: button.config(background=colorOnHover))
     button.bind("<Leave>",func=lambda e: button.config(background=colorOnLeave))
-image_path1="A:\\Python\\Projects\\Automated Attendence System\\Take Attendence.jpg"
-image_path2="A:\\Python\\Projects\\Automated Attendence System\\Holiday.png"
-imagepath_p="A:\\Python\\Projects\\Automated Attendence System\\presentstudents.jpg"
-imagepath_a="A:\\Python\\Projects\\Automated Attendence System\\absentstudents.png"
-imagepath_pr="A:\\Python\\Projects\\Automated Attendence System\\presentstd.png"
-imagepath_ar="A:\\Python\\Projects\\Automated Attendence System\\absentstd.png"
-imagepath_signup="A:\\Python\\Projects\\Automated Attendence System\\signup.png"
+image_path1="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\Take Attendence.jpg"
+image_path2="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\Holiday.png"
+imagepath_p="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\presentstudents.jpg"
+imagepath_a="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\absentstudents.png"
+imagepath_pr="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\presentstd.png"
+imagepath_ar="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\absentstd.png"
+imagepath_signup="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\signup.png"
 #--------------------------------------MENU PAGE---------------------------------------------------------------------------------
 def menu():
     signin=Toplevel(root)
@@ -553,7 +553,7 @@ def student_details():
     menu_heading.place(x=120,y=5)
     Frame(st_frame,width=1,height=275,bg='black').place(x=230,y=80)
     #-----------------------------------------------------------------
-    imagepath="A:\\Python\\Projects\\Automated Attendence System\\studentdetails2.png"
+    imagepath="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\studentdetails2.png"
     stdlabel=Label(st_frame,image='',bg='white',width=35,height=17)
     stdlabel.place(x=250,y=80)
     add_image_to_frame(stdlabel,imagepath,250,260)
@@ -677,7 +677,7 @@ def student_data(f):
     menu_heading=Label(sd_frame,text="Student Details",fg="#0097E8",bg="white",font=("Microsoft YaHei UI Light",21,"bold"))
     menu_heading.place(x=120,y=5)
     #-------------------------------------------------------
-    imagepath="A:\\Python\\Projects\\Automated Attendence System\\studentdetail1.png"
+    imagepath="A:\\Python\\Projects\\Automated Attendence System\\Pictures\\studentdetail1.png"
     stdlabel=Label(sd_frame,image='',bg='white',width=35,height=17)
     stdlabel.place(x=200,y=50)
     add_image_to_frame(stdlabel,imagepath,250,260)
