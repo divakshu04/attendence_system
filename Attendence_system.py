@@ -1271,7 +1271,7 @@ def dashboard():
                                 absent_no=absent_no+1
                             elif i=='P':
                                 present_no=present_no+1
-                    total=present_no+absent_no
+                    total=max(total, present_no+absent_no)
                     data_p=Label(data_frame2,text=present_no,fg="black",bg="white",font=("Microsoft YaHei UI Light",11,"bold"),width=10)
                     data_p.grid(row=idx1+1,column=0,padx=10,pady=10)
                     data_a=Label(data_frame2,text=absent_no,fg="black",bg="white",font=("Microsoft YaHei UI Light",11,"bold"),width=10)
